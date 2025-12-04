@@ -1,0 +1,23 @@
+.header{
+    margin: 0px auto;
+}
+.header__inner{
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.header__logo{
+
+}
+
+.contact-form__content{
+    margin: 60px auto;
+    width: 70%;
+}
+.contact-form__ttl{
+    text-align: center;
+}
+.form__group{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
