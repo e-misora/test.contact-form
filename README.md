@@ -22,7 +22,7 @@
   DB_PASSWORD=laravel_pass  
   ```
 
-- アプリケーションを実行するためのキーを作成
+- アプリケーションを実行するためのキーを作成  
   docker-compose exec php bash  
   php artisan key:generate  
 - マイグレーション実行  
