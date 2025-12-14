@@ -18,6 +18,7 @@ class Contact extends Model
         'tel-1',
         'tel-2',
         'tel-3',
+        'address',
         'building',
         'detail'
     ];

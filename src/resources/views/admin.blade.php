@@ -49,7 +49,7 @@
                             </a>
                             <ul class="pagination__items">
                                 <li class="is-active"><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a href="/admin"></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
@@ -68,10 +68,10 @@
                         </tr>
                         @foreach($contacts as $contact)
                         <tr class="table__row">
-                            <td class=>{{$contact['last_name']}}{{$contact['first_name']}}</td>
-                            <td>{{$contact['gender']}}</td>
-                            <td>{{$contact['email']}}</td>
-                            <td>{{$contact['']}}</td>
+                            <td class="table__item">{{$contact['last_name']}}{{$contact['first_name']}}</td>
+                            <td class="table__item">{{$contact['gender']}}</td>
+                            <td class="table__item">{{$contact['email']}}</td>
+                            <td class="table__item">{{$contact['category_id']}}</td>
                         </tr>
                         @endforeach
                     </table>

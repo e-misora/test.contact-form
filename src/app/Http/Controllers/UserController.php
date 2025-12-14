@@ -7,10 +7,6 @@ use App\Models\User;
 
 class UserController extends Controller
 {
-    // public function index(){
-    //     $users=User::Paginate(7);
-    //     return view('admin',['users'=>$users]);
-    // }
 
     public function index(){
         return view('auth.register');

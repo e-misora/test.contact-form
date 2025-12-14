@@ -3,18 +3,34 @@
 ## 環境構築
 
 - リポジトリをクローン  
-  git clone git@github.com:e-misora/test.contact-form.git
+  git clone git@github.com:e-misora/test.contact-form.git  
+  cd test.contact-form  
 - docker のビルド 起動  
-  docker-compose up -d --build
+  docker-compose up -d --build  
 - Laravel パッケージのインストール  
-  composer install
+  docker-compose exec php bash  
+  composer install  
 - 環境変数を設定  
+  cd src  
   cp .env.example .env  
-  .env ファイルを編集して必要な値を設定
+  .env ファイルを編集して必要な値を設定  
+
+  ```bash:.env  
+  DB_HOST=mysql  
+  DB_DATABASE=laravel_db  
+  DB_USERNAME=laravel_user  
+  DB_PASSWORD=laravel_pass  
+  ```
+
+- アプリケーションを実行するためのキーを作成
+  docker-compose exec php bash  
+  php artisan key:generate  
 - マイグレーション実行  
-  php artisan migrate
+  docker-compose exec php bash  
+  php artisan migrate  
 - シーディング実行  
-  php artisan db:seed
+  docker-compose exec php bash  
+  php artisan db:seed  
 
 ## 使用技術（実行環境）
 

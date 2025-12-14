@@ -242,3 +242,8 @@ p {
     height: 60px;
     border-bottom: #ddd 1px solid;
 }
+
+.table__item{
+    padding-left: 20px;
+    border-bottom: #ddd 1px solid;
+}

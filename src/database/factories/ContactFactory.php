@@ -17,6 +17,7 @@ class ContactFactory extends Factory
     public function definition()
     {
         return [
+            'category_id'=>$this->faker->numberBetween(1,5),
             'last_name'=>$this->faker->lastName(),
             'first_name'=>$this->faker->firstName(),
             'gender'=>$this->faker->numberBetween(1,3),
@@ -27,7 +28,6 @@ class ContactFactory extends Factory
             'address'=>$this->faker->address(),
             'building'=>$this->faker->secondaryAddress(),
             'detail'=>$this->faker->text()
-
         ];
     }
 }
